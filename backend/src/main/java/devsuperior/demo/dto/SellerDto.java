@@ -1,4 +1,4 @@
-package devsuperior.demo;
+package devsuperior.demo.dto;
 
 import java.io.Serializable;
 
