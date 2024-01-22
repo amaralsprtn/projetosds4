@@ -1,39 +1,42 @@
-package devsuperior.demo.dto;
+package com.devtonin.dunder.entities;
 
 import java.time.LocalDate;
 
-import devsuperior.demo.entities.Sale;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
-public class SaleDto {
+@Entity
+@Table(name = "tb_sales")
+public class Sale {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private Integer visited;
 	private Integer deals;
 	private Double amount;
 	private LocalDate date;
 	
-	private SellerDto seller;
+	@ManyToOne
+	@JoinColumn(name = "seller_id")
+	private Seller seller;
 	
-	public SaleDto() { 
+	public Sale() {
 		
 	}
 
-	public SaleDto(Long id, Integer visited, Integer deals, Double amount, LocalDate date, SellerDto seller) {
+	public Sale(Long id, Integer visited, Integer deals, Double amount, LocalDate date, Seller seller) {
 		this.id = id;
 		this.visited = visited;
 		this.deals = deals;
 		this.amount = amount;
 		this.date = date;
 		this.seller = seller;
-	}
-	
-	
-	public SaleDto(Sale entity) {
-		id = entity.getId();
-		visited = entity.getVisited();
-		deals = entity.getDeals();
-		amount = entity.getAmount();
-		date = entity.getDate();
-		seller = new SellerDto(entity.getSeller());
 	}
 
 	public Long getId() {
@@ -76,11 +79,12 @@ public class SaleDto {
 		this.date = date;
 	}
 
-	public SellerDto getSeller() {
+	public Seller getSeller() {
 		return seller;
 	}
 
-	public void setSeller(SellerDto seller) {
+	public void setSeller(Seller seller) {
 		this.seller = seller;
 	}
+	
 }

@@ -1,4 +1,4 @@
-package devsuperior.demo.config;
+package com.devtonin.dunder.config;
 
 import java.util.Arrays;
 

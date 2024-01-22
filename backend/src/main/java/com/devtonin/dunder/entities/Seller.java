@@ -1,4 +1,4 @@
-package devsuperior.demo.entities;
+package com.devtonin.dunder.entities;
 
 import java.util.ArrayList;
 import java.util.List;

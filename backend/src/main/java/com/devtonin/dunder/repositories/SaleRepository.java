@@ -1,13 +1,13 @@
-package devsuperior.demo.repositories;
+package com.devtonin.dunder.repositories;
 
+import com.devtonin.dunder.entities.Sale;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import devsuperior.demo.dto.SaleSuccessDto;
-import devsuperior.demo.dto.SaleSumDto;
-import devsuperior.demo.entities.Sale;
+import com.devtonin.dunder.dto.SaleSuccessDto;
+import com.devtonin.dunder.dto.SaleSumDto;
 
 public interface SaleRepository extends JpaRepository<Sale, Long>{
 	

@@ -1,5 +1,6 @@
-package devsuperior.demo.services;
+package com.devtonin.dunder.services;
 
+import com.devtonin.dunder.entities.Sale;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,12 +9,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import devsuperior.demo.dto.SaleDto;
-import devsuperior.demo.dto.SaleSuccessDto;
-import devsuperior.demo.dto.SaleSumDto;
-import devsuperior.demo.entities.Sale;
-import devsuperior.demo.repositories.SaleRepository;
-import devsuperior.demo.repositories.SellerRepository;
+import com.devtonin.dunder.dto.SaleDto;
+import com.devtonin.dunder.dto.SaleSuccessDto;
+import com.devtonin.dunder.dto.SaleSumDto;
+import com.devtonin.dunder.repositories.SaleRepository;
+import com.devtonin.dunder.repositories.SellerRepository;
 
 @Service
 public class SaleService {

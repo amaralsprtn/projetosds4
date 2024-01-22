@@ -1,5 +1,6 @@
-package devsuperior.demo.controllers;
+package com.devtonin.dunder.controllers;
 
+import com.devtonin.dunder.services.SellerService;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import devsuperior.demo.dto.SellerDto;
-import devsuperior.demo.services.SellerService;
+import com.devtonin.dunder.dto.SellerDto;
 
 @RestController
 @RequestMapping(value = "/sellers")

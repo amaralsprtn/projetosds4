@@ -1,8 +1,7 @@
-package devsuperior.demo.dto;
+package com.devtonin.dunder.dto;
 
+import com.devtonin.dunder.entities.Seller;
 import java.io.Serializable;
-
-import devsuperior.demo.entities.Seller;
 
 public class SaleSuccessDto implements Serializable {
 	
