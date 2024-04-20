@@ -11,7 +11,9 @@
   mvn clean install
 ```
   > Run the main class Sds4Application.java
+> 
   > It will be available at `localhost:8080`
+> 
   > The database is accessable trough `localhost:5432/dsvendas`
 
 ### To run the frontend app:
