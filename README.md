@@ -14,7 +14,7 @@
 > 
   > It will be available at `localhost:8080`
 > 
-  > The database is accessable trough `localhost:5432/dsvendas`
+  > The database is accessable through `localhost:5432/dsvendas`
 
 ### To run the frontend app:
   ```shell
